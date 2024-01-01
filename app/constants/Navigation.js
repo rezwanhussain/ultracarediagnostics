@@ -33,7 +33,7 @@ export const menus = [
     menuItems: [
       {
         title: "New Appointments",
-        path: "/dashboard/appointments",
+        path: "/dashboard/new-appointments",
         icon: <FiEdit />,
       },
       {
@@ -53,7 +53,7 @@ export const menus = [
       },
       {
         title: "Users",
-        path: "/dashboard/Users",
+        path: "/dashboard/users",
         icon: <FiUsers />,
       },
     ],

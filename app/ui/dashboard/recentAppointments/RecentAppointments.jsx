@@ -28,7 +28,7 @@ const recentOrderData = [
 		id: '3',
 		patient_id: '87832',
 		patient_name: 'Luke Parkin',
-        gender: 'female',
+        gender: 'Female',
         disease: 'Heart Disease',
 		order_date: '2022-05-16T12:40:00',
 		order_total: '$334.50',
@@ -93,13 +93,13 @@ const RecentAppointments = () => {
         <strong className="text-gray-500 font-medium">Recent Appointments</strong>
         <span className='text-sm text-blue-500'><Link href="/dashboard/appointments-list">View All</Link></span>
         </div>
-			<div className="border-x rounded border-zinc-200 dark:border-neutral-800 mt-3">
+			<div className="border-x rounded border-zinc-200 dark:border-neutral-800 mt-3 overflow-x-auto">
 				<table className="w-full text-gray-500">
 					<thead className='bg-neutral-200 dark:bg-zinc-500 p-3'>
 						<tr className='text-left'>
 							<th className='px-4 text-sm dark:text-neutral-800 text-neutral-500'>ID</th>
-							<th className='text-sm py-2 dark:text-neutral-800 text-neutral-500'>Patient ID</th>
-							<th className='text-sm px-4 dark:text-neutral-800 text-neutral-500 py-2'>Patients Name</th>
+							<th className='text-sm py-2 dark:text-neutral-800 text-neutral-500 whitespace-nowrap'>Patient ID</th>
+							<th className='text-sm px-4 dark:text-neutral-800 text-neutral-500 py-2 whitespace-nowrap'>Patients Name</th>
 							<th className='text-sm py-2 pr-4 dark:text-neutral-800 text-neutral-500'>Gender</th>
 							<th className='text-sm py-2 dark:text-neutral-800 text-neutral-500'>Disease</th>
 							<th className='text-sm py-2 dark:text-neutral-800 text-neutral-500'>Date</th>
@@ -116,10 +116,10 @@ const RecentAppointments = () => {
 									<Link href={`/appointment/${appointment.patient_id}`}>#{appointment.patient_id}</Link>
 								</td>
 								<td>
-									<Link href={`/patients/${appointment.patient_id}`} className='text-sm px-4'>{appointment.patient_name}</Link>
+									<Link href={`/patients/${appointment.patient_id}`} className='text-sm px-4 whitespace-nowrap'>{appointment.patient_name}</Link>
 								</td>
 								<td className='text-sm pr-4'>{appointment.gender}</td>
-								<td className='text-sm pr-2'>{appointment.disease}</td>
+								<td className='text-sm pr-2 whitespace-nowrap'>{appointment.disease}</td>
 								<td className='text-sm pr-4'>{new Date(appointment.order_date).toLocaleDateString()}</td>
 								<td className=' text-sm'>{getAppointmentStatus(appointment.current_order_status)}</td>
 							</tr>

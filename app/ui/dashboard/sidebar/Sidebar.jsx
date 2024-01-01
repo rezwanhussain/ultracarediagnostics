@@ -41,7 +41,7 @@ const Sidebar = () => {
               <span key={index} className={`text-xs font-semibold pl-2 ${!open && "hidden"} duration-300`}>{cat.title}</span>
               {
                 cat.menuItems.map (item => (
-                  <MenuLinks item={item} key={item.title} isOpen={open}/>
+                  <MenuLinks item={item} key={item.title} isOpen={open} />
                 ))
               }
             </ul>

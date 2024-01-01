@@ -33,7 +33,7 @@ const Dashboard = () => {
           <div className="pl-4">
             <span className="text-sm text-gray-500 font-normal">Total Appointments </span>
             <div className="flex items-center">
-              <strong className="text-xl text-gray-700 dark:text-white font-semibold">500</strong>
+              <strong className="text-xl text-gray-700 dark:text-white font-semibold">350</strong>
               <span className="text-sm text-green-500 pl-2">+124</span>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Dashboard = () => {
           <div className="pl-4">
             <span className="text-sm text-gray-500 font-normal">Total Tests </span>
             <div className="flex items-center">
-              <strong className="text-xl text-gray-700 dark:text-white font-semibold">500</strong>
+              <strong className="text-xl text-gray-700 dark:text-white font-semibold">250</strong>
               <span className="text-sm text-green-500 pl-2">+124</span>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Dashboard = () => {
           <div className="pl-4">
             <span className="text-sm text-gray-500 font-normal">Total Sales </span>
             <div className="flex items-center">
-              <strong className="text-xl text-gray-700 dark:text-white font-medium">500</strong>
+              <strong className="text-xl text-gray-700 dark:text-white font-medium">$500.00</strong>
               <span className="text-sm text-green-500 pl-2">+124</span>
             </div>
           </div>

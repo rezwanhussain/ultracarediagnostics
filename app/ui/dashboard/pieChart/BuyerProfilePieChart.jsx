@@ -28,7 +28,7 @@ const BuyerProfilePieChart = () => {
         <strong className="text-gray-500 font-medium">Patients Encountered Profile</strong>
 			<div className="mt-3 w-full flex-1 text-xs">
 				<ResponsiveContainer width="100%" height="100%">
-					<PieChart width={400} height={300}>
+					<PieChart width={400} height={300} className="pt-2">
 						<Pie
 							data={data}
 							cx="50%"
