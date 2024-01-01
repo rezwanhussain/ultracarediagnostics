@@ -14,6 +14,7 @@ import {
 } from "react-icons/fi";
 import { GoBeaker, GoGraph } from "react-icons/go";
 import { LuBarChart4 } from "react-icons/lu";
+import { FaUserDoctor } from "react-icons/fa6";
 
 export const menus = [
   {
@@ -48,6 +49,11 @@ export const menus = [
       {
         title: "Doctors",
         path: "/dashboard/doctors",
+        icon: <FaUserDoctor/>,
+      },
+      {
+        title: "Users",
+        path: "/dashboard/Users",
         icon: <FiUsers />,
       },
     ],
@@ -117,11 +123,6 @@ export const menus = [
   {
     title: "Admin",
     menuItems: [
-      {
-        title: "Users",
-        path: "/dashboard/Users",
-        icon: <FiUsers />,
-      },
       {
         title: "Profile",
         path: "/dashboard/appointments-list",

@@ -19,7 +19,7 @@ const Navbar = () => {
         <FiSettings fontSize={22} className="text-black mx-3 mr-7 dark:text-white" />
         <div className="flex items-center">
           <Image src={userImage} width={35} height={35} alt="Profile Picture" className="mr-3 rounded-full" />
-          <span className="dark:text-white">Rezwan Hussain</span>
+          <span className="dark:text-white">Hello, Rezwan</span>
         </div>
       </div>
     </div>

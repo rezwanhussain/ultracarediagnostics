@@ -7,11 +7,11 @@ import { ThemeProvider } from "../ui/theme/ThemeProvider"
 
 const Layout = ({children}) => {
   return (
-    <div className="flex flex-row bg-neutral-200 dark:bg-[#000] gap-4">
+    <div className="flex flex-row bg-neutral-200 dark:bg-[#000] sm:gap-1 md:gap-2">
         <div>
             <Sidebar/>
         </div>
-        <div className="p-4 w-full">
+        <div className="p-4 w-full bg-neutral-200 dark:bg-[#000]">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Navbar/>
             {children}
@@ -22,3 +22,8 @@ const Layout = ({children}) => {
 }
 
 export default Layout
+
+
+
+
+
