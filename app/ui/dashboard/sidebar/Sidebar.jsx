@@ -34,7 +34,7 @@ const Sidebar = () => {
         </h1>
       </div>
 
-      <div className="mt-6">
+      <div className="mt-6  overflow-y-auto">
         {menus.map ((cat, index) => {
           return (
             <ul className="mt-3" key={index}>

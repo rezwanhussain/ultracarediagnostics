@@ -91,7 +91,7 @@ const RecentAppointments = () => {
     <div className="lg:col-span-2 sm:col-span-3 bg-neutral-100 dark:bg-light-black px-4 pt-3 pb-4 mt-5 rounded-md border-2 border-zinc-200 dark:border-neutral-800 flex-1">
         <div className="flex justify-between pt-2">
         <strong className="text-gray-500 font-medium">Recent Appointments</strong>
-        <span className='text-sm text-blue-500'><Link href="/dashboard/appointments-list">View All</Link></span>
+        <span className='text-sm text-white bg-indigo-600 px-3 py-1 rounded-sm'><Link href="/dashboard/appointments-list">View All</Link></span>
         </div>
 			<div className="border-x rounded border-zinc-200 dark:border-neutral-800 mt-3 overflow-x-auto">
 				<table className="w-full text-gray-500">
