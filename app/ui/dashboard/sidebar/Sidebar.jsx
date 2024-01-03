@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsArrowLeftShort } from "react-icons/bs";
 import { RiTestTubeLine } from "react-icons/ri";
 import { menus } from "@/app/constants/Navigation";
@@ -7,6 +7,28 @@ import MenuLinks from "./menuLink/menuLinks";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 992) {
+        setOpen(false);
+      } else {
+        setOpen(true);
+      }
+    };
+
+    // Set initial state based on window width
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   return (
     <div

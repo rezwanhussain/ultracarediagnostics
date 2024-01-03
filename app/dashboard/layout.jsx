@@ -11,7 +11,7 @@ const Layout = ({children}) => {
         <div>
             <Sidebar/>
         </div>
-        <div className="p-4 w-full bg-neutral-200 dark:bg-[#000] grow">
+        <div className="p-4 w-full bg-neutral-200 dark:bg-[#000]">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Navbar/>
             {children}
