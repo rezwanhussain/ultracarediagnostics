@@ -9,4 +9,4 @@ const MenuLinks = ({item, isOpen}) => {
   )
 }
 
-export default MenuLinks 
+export default MenuLinks

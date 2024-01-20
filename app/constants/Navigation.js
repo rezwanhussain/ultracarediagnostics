@@ -35,6 +35,23 @@ export const menus = [
         title: "New Appointments",
         path: "/dashboard/new-appointments",
         icon: <FiEdit />,
+        dropdown: [
+          {
+            title: "Option 1",
+            path: "/dashboard/new-appointments/option-1",
+            icon: <FiBell />,
+          },
+          {
+            title: "Option 2",
+            path: "/dashboard/new-appointments/option-2",
+            icon: <FiBell />,
+          },
+          {
+            title: "Option 3",
+            path: "/dashboard/new-appointments/option-3",
+            icon: <FiBell />,
+          },
+        ],
       },
       {
         title: "Appointments List",
